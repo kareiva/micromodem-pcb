@@ -11,6 +11,12 @@ This is untested, unverified, experimental work. The authors do not hold any res
 
 ## Features
 
+### Version 0.2
+* Traces widened from 0.25 to 0.5mm
+* Added GND area fill on the back side
+* Signature added :)
+
+### Version 0.1
 * Only the ANALOG_IN, ANALOG_OUT and PTT are exposed.
 * PTT wiring has been done as per Baofeng schematics.
 * Tested with 3.3V MicroModem's [SimpleSerial](https://github.com/markqvist/MicroAPRS/raw/master/precompiled/microaprs-3v-ss-latest.hex) and [KISS](https://github.com/markqvist/MicroModemGP/raw/master/precompiled/MicroModemGP-3v-kiss.hex) firmware.
@@ -28,6 +34,7 @@ For non USB-C Nano, a USB-C male to USB-A female adapter is required for recent 
 ## TODO
 
 * Replace Q1 with SMT version
+* Add Bluetooth support
 
 ## Authors
 
