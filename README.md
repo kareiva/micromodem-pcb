@@ -11,6 +11,13 @@ This is untested, unverified, experimental work. The authors do not hold any res
 
 ## Features
 
+### Version 0.3
+* Upgraded to KiCad version 6
+* Fixed edge cut layer (Edge.Cuts)
+* Re-rendered PCB 3D visual with ray tracing
+* Added JLCPCB compatible BOM and CPL files
+* Ordered test batch from JLCPCB :)
+
 ### Version 0.2
 * Traces widened from 0.25 to 0.5mm
 * Added GND area fill on the back side
