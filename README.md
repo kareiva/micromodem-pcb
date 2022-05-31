@@ -1,22 +1,23 @@
 # LY2EN-made MicroModem Arduino Nano shield
 
-PCB and schematics for very basic implementation of custom [MicroModem](https://unsigned.io/micromodem/) shield for
+PCB and schematics for very basic [MicroModem](https://unsigned.io/micromodem/) shield for
 Arduino Nano to use with Baofeng radios.
 
 ![LY2EN-micromodem](LY2EN-micromodem.png)
 
 ## Disclaimer
 
-This is untested, unverified, experimental work. The authors do not hold any responsibility for any damage to your electronics components, wiring or other property when using this prototype. Use at your own risk.
+This is experimental work. The authors do not hold any responsibility for any damage to your electronics components, wiring or other property when using this prototype. Use at your own risk.
 
 ## Features
 
-### Version 0.3
+### Version 0.3 (verified)
 * Upgraded to KiCad version 6
 * Fixed edge cut layer (Edge.Cuts)
 * Re-rendered PCB 3D visual with ray tracing
 * Added JLCPCB compatible BOM and CPL files
 * Ordered test batch from JLCPCB :)
+* **Verified working!**
 
 ### Version 0.2
 * Traces widened from 0.25 to 0.5mm
@@ -32,11 +33,19 @@ This is untested, unverified, experimental work. The authors do not hold any res
 
 ## How to use
 
-Just plug the Arduino Nano into your [APRSDroid](https://aprsdroid.org/) and select TNC (KISS) mode over USB. Set baud rate to 9600.
+Upload the MicroModem KISS firmware to the Arduino Nano:
+
+    avrdude -p m328p -c arduino -P /dev/ttyUSB0 -b 115200 -U flash:w:MicroAPRS.hex
+
+Then plug the Arduino Nano into your [APRSDroid](https://aprsdroid.org/) and select TNC (KISS) mode over USB. Set baud rate to 9600.
 
 ## Cables
 
 For non USB-C Nano, a USB-C male to USB-A female adapter is required for recent Android smartphones.
+
+Connect to Baofeng radio over this cable: https://a.aliexpress.com/_mNhKQOm 
+
+Pinout: GND-Blue, PTT-Yellow, IN-Green, OUT-Red
 
 ## TODO
 
