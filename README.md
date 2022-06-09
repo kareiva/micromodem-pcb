@@ -1,7 +1,6 @@
 # LY2EN-made MicroModem Arduino Nano shield
 
-PCB and schematics for very basic [MicroModem](https://unsigned.io/micromodem/) shield for
-Arduino Nano to use with Baofeng radios.
+PCB and schematics for a very basic [MicroModem](https://unsigned.io/micromodem/) shield for Arduino Nano to use with Baofeng radios.
 
 ![LY2EN-micromodem](LY2EN-micromodem.png)
 
@@ -9,7 +8,33 @@ Arduino Nano to use with Baofeng radios.
 
 This is experimental work. The authors do not hold any responsibility for any damage to your electronics components, wiring or other property when using this prototype. Use at your own risk.
 
-## Features
+## How to use
+
+1. Upload the [MicroAPRS 3v KISS firmware](https://github.com/markqvist/MicroAPRS/raw/master/precompiled/microaprs-3v-kiss-latest.hex) to the Arduino Nano:
+
+    avrdude -p m328p -c arduino -P /dev/ttyUSB0 -b 115200 -U flash:w:microaprs-3v-kiss-latest.hex
+
+2. Plug the Arduino Nano into your Android phone's USB host
+
+3. Launch [APRSDroid](https://aprsdroid.org/) 
+
+    3.1 Select TNC (KISS) mode over USB. 
+    
+    3.2 Keep the baud rate at 9600.
+    
+4. Set the 3296W trimmer to something around 47kOhm. Your resistance might vary here. Once you're confident, you can replace it with a simple 47k resistor.
+
+Verified working with both the MicroAPRS KISS and MicroAPRS SimpleSerial firmware for 3V.
+
+## Cables
+
+For non USB-C Nano, a USB-C male to USB-A female adapter is required for recent Android smartphones.
+
+Connect to Baofeng radio over this cable: https://a.aliexpress.com/_mNhKQOm 
+
+Pinout: GND-Blue, PTT-Yellow, IN-Green, OUT-Red
+
+## Features / Changelog
 
 ### Version 0.3 (verified)
 * Upgraded to KiCad version 6
@@ -30,22 +55,6 @@ This is experimental work. The authors do not hold any responsibility for any da
 * Tested with 3.3V MicroModem's [SimpleSerial](https://github.com/markqvist/MicroAPRS/raw/master/precompiled/microaprs-3v-ss-latest.hex) and [KISS](https://github.com/markqvist/MicroModemGP/raw/master/precompiled/MicroModemGP-3v-kiss.hex) firmware.
 * Assuming that RST, XTAL, SPI pins, the CH340 and the rest of stuff is on the Nano already
 * Wiring is done for 3.3V, so make sure to use the 3.3V MicroModem hex (see above).
-
-## How to use
-
-Upload the MicroModem KISS firmware to the Arduino Nano:
-
-    avrdude -p m328p -c arduino -P /dev/ttyUSB0 -b 115200 -U flash:w:MicroAPRS.hex
-
-Then plug the Arduino Nano into your [APRSDroid](https://aprsdroid.org/) and select TNC (KISS) mode over USB. Set baud rate to 9600.
-
-## Cables
-
-For non USB-C Nano, a USB-C male to USB-A female adapter is required for recent Android smartphones.
-
-Connect to Baofeng radio over this cable: https://a.aliexpress.com/_mNhKQOm 
-
-Pinout: GND-Blue, PTT-Yellow, IN-Green, OUT-Red
 
 ## TODO
 
