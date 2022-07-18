@@ -1024,9 +1024,9 @@
     (fp_line (start 1 -0.625) (end 1 0.625) (layer "F.Fab") (width 0.1) (tstamp a38f5125-5895-4b51-ae23-ffca27c21b0a))
     (fp_line (start -1 0.625) (end -1 -0.625) (layer "F.Fab") (width 0.1) (tstamp ac0ec1b0-5b57-40a9-a16c-cc1cd59b8bc2))
     (fp_line (start -1 -0.625) (end 1 -0.625) (layer "F.Fab") (width 0.1) (tstamp e29c10dc-a6c3-4557-9838-a249219d93f6))
-    (pad "1" smd roundrect (at -1 0 180) (size 1.2 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.208333)
+    (pad "1" smd roundrect (at -1 0 180) (size 1.2 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2083333333)
       (net 31 "ANALOG_OUT") (pintype "passive") (tstamp 2f591ac4-2abe-444d-ad30-b07f3192de0a))
-    (pad "2" smd roundrect (at 1 0 180) (size 1.2 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.208333)
+    (pad "2" smd roundrect (at 1 0 180) (size 1.2 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2083333333)
       (net 28 "Net-(C2-Pad1)") (pintype "passive") (tstamp df815882-8c9b-465c-b4c1-a26f0ce4f432))
     (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
       (offset (xyz 0 0 0))
