@@ -28,13 +28,16 @@ Verified working with both the MicroAPRS KISS and MicroAPRS SimpleSerial firmwar
 
 ## Cables
 
-For non USB-C Nano, a USB-C male to USB-A female adapter is required for recent Android smartphones.
+If you're not using a [Bluetooth SPP-C module](https://www.aliexpress.com/item/32998624269.html), a USB-C male to USB-A female adapter is required for recent Android smartphones.
 
-Connect to Baofeng radio over this cable: https://a.aliexpress.com/_mNhKQOm 
+Connect to Baofeng radio over [this cable](https://a.aliexpress.com/_mNhKQOm).
 
 Pinout: GND-Blue, PTT-Yellow, IN-Green, OUT-Red
 
 ## Features / Changelog
+
+### Version 0.4
+* Added pin hole connector for SPP-C Bluetooth module
 
 ### Version 0.3 (verified)
 * Upgraded to KiCad version 6
@@ -59,7 +62,6 @@ Pinout: GND-Blue, PTT-Yellow, IN-Green, OUT-Red
 ## TODO
 
 * Replace Q1 with SMT version
-* Add Bluetooth support
 
 ## Authors
 
