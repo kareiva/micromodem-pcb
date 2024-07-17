@@ -1,7 +1,7 @@
 Comment,Designator,Package,JLCPCB Part #（optional）
 100nF,C1,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
 1uF,C3,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
-47k,R5,R9,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
+47k,R5,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
 270,"R7,R8",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
 100k,"R11,R10",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
 1k,"R16,R6,R1",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
