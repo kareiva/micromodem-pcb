@@ -32,7 +32,14 @@ If you're not using a [Bluetooth SPP-C module](https://www.aliexpress.com/item/3
 
 Connect to Baofeng radio over [this cable](https://a.aliexpress.com/_mNhKQOm).
 
-Pinout: GND-Blue, PTT-Yellow, IN-Green, OUT-Red
+### Pinout
+The Baofeng cable has two TRS (Tip, Ring, Sleeve) connectors.
+#### 3.5mm
+* Sleeve - PTT
+* Ring - OUT
+#### 2.5mm
+* Sleeve - GND
+* Tip - IN
 
 ## Features / Changelog
 
